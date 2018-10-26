@@ -60,12 +60,12 @@ How to remember them:
 What is EBS?
 Amazon EBS (Elastic Block Storage) allows yo to create storage volumes and attach them to Amazon EC2 instances. Once attached, you can create a file system on top of these volumes, run a database, or use them in any other way you use a block device.
 
-EBS Volume Types
-### SSD
+### EBS Volume Types
+##### SSD
 - **General Purpose SSD (GP2)** - balances price and performance for a wide variety of workloads
 -  **Provisioned IOPS SSD (IO1)** - highest-performance SSD volumes for mission critical low-latency or high-throughput workloads
 	- DESIGNED for I/O intensive applications such as large scale relational db or NOSQL databases
-### Magnetic
+##### Magnetic
 - **Throughput Optimized HDD (ST1)** - Low cost HDD volume designed for frequently accessed, throughput-intensive workloads
 - **Cold HDD (SC1)** - low cost HDD volume designed for less frequently accessed workloads
 	- File Server
