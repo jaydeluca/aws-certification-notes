@@ -1,6 +1,10 @@
 # EC2 
 Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizable counter capacity in the cloud. 
 
+- [Pricing Models](https://github.com/jaydeluca/aws-certification-notes/blob/master/AWS-Certified-Developer/EC2.md#pricing-models)
+- [EC2 Instance Types](https://github.com/jaydeluca/aws-certification-notes/blob/master/AWS-Certified-Developer/EC2.md#ec2-instance-types)
+- [EBS Volume Types](https://github.com/jaydeluca/aws-certification-notes/blob/master/AWS-Certified-Developer/EC2.md#ebs-volume-types)
+
 ### Pricing Models
 - **On Demand** - allows you to pay a fixed rate by the hour (or by the second) with no commitment
 - **Reserved** - provides you with a capacity reservation, and offer a significant discount on the hourly charge for an instance 1 - 3 Terms
