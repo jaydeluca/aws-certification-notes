@@ -36,3 +36,6 @@ Amazon EBS (Elastic Block Storage) allows you to create storage volumes and atta
 - Data is accessed infrequently 
 - Dev environment testing/setup
 
+
+## Encrypting EBS Volumnes
+- **Volumes that are created from encrypted snapshots are automatically encrypted, and volumes that are created from unencrypted snapshots are automatically unencrypted. If no snapshot is selected, you can choose to encrypt the volume.**
