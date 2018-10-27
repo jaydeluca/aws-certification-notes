@@ -3,7 +3,7 @@
 We can use this repository as a place to hold notes surrounding the aws developer associate exam. Feel free to break sections into their own files if they get large.
 
 ## Certifications
-- AWS Certified Developer - Associate
+- [AWS Certified Developer - Associate](https://github.com/jaydeluca/aws-certification-notes/tree/master/AWS-Certified-Developer)
 - AWS Certified Solutions Architect - Associate
 - AWS Certified DevOps Engineer - Professional
 
