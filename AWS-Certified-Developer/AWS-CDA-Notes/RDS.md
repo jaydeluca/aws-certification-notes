@@ -9,6 +9,7 @@ Amazon Relational Database Service
 - Fields (Columns)
 
 || ID || First Name || Surname || Gender ||
+|:-:|:-:|:-:|:-:|
 | 1 || Ian | Arsenault | M |
 | 2 | Jay | Deluca | M |
 | 3 | Mike | Dobachesky | M |
