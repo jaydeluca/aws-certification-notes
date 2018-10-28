@@ -8,9 +8,9 @@ Amazon Relational Database Service
 - Row
 - Fields (Columns)
 
-|| ID || First Name || Surname || Gender ||
+| ID | First Name | Surname | Gender |
 |:-:|:-:|:-:|:-:|
-| 1 || Ian | Arsenault | M |
+| 1 | Ian | Arsenault | M |
 | 2 | Jay | Deluca | M |
 | 3 | Mike | Dobachesky | M |
 | 4 | Jameson | Arsenault | M |
@@ -99,3 +99,39 @@ Example: Caching top 10 items on your store in ElastiCache so your production da
     - Redis
     
     
+## Backups, MULTI-AZ & Read Replicas
+- There are two different types of Backups for AWS: Automated Backups and Database Snapshots
+- **Automated Backups** allow you to recover your database to any point in time within a "retention period". The retention period can be between one and 35 days. Automated backups will take a full daily snapshot and will also store transaction logs throughout the day. When you do a recovery, AWS will first choose the most recent daily backup, and then apply transaction log relevant to that day. This allows you to do a point in time recovery down to a second, within a retention period.
+    - enabled by default
+    - if RDS instance is 10GB, you will get 10GB worth of storage
+    - Backups are taken within a defined window
+- **DB Snapshots** are done manually (ie they are user initiated) They are stored even after you delete the original RDS instance, unlike automated backups.
+
+
+### Restoring Backups
+- Whenever you restore either an Automatic Backup or manual snapshot, the restored version of the database will be a new RDS instace with a new DNS endpoint
+
+### Encryption
+- Encryption at rest is supported for MySQL, Oracle, SQL Server, PostgreSQL, MariaDB & Aurora. 
+- Encryption is done using the AWS Key Management Services (KMS). 
+- Once your RDS is encrypted the data stored at rest in the underlying storage is encrypted, as are its automated backups, read replicas, and snapshots.  
+- At the present time, encrypting an existing DB instance is not supported. To use Amazon RDS encryption for an existing database, you must first create a snapshot, make a copy of that snapshot and encrypt the copy.
+
+**Important to note for Exam:**
+To deploy a encrypted copy of snapshot
+- Check off your Snapshot > Actions > Copy Snapshot
+- Scroll down to Encryption
+- Enable Encryption
+- From this we can create a copy and deploy a new RDS instance
+
+## Multi-AZ
+- Multi-AZ allows you to have an exact copy of your production database in another Availability Zone. AWS Handles the replication for you, so when your production database is written to, this write will automatically be synchronized to the stand-by database
+- In the event of planned database maintenance, DB Instance failure, or an Availability Zone failure, Amazon RDS will automatically failover to the standby so that database operations can resume quickly without administrative intervention.
+
+### What is Multi-AZ RDS?
+- **Multi-AZ is for Disaster Recovery only**
+- It is not primarily used for improving performance. For performance improvement, you need Read Replicas
+
+
+## Read Replica
+TODO
