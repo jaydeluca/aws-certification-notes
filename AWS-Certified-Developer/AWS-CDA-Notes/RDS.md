@@ -117,3 +117,21 @@ Example: Caching top 10 items on your store in ElastiCache so your production da
 - Once your RDS is encrypted the data stored at rest in the underlying storage is encrypted, as are its automated backups, read replicas, and snapshots.  
 - At the present time, encrypting an existing DB instance is not supported. To use Amazon RDS encryption for an existing database, you must first create a snapshot, make a copy of that snapshot and encrypt the copy.
 
+**Important to note for Exam:**
+To deploy a encrypted copy of snapshot
+- Check off your Snapshot > Actions > Copy Snapshot
+- Scroll down to Encryption
+- Enable Encryption
+- From this we can create a copy and deploy a new RDS instance
+
+## Multi-AZ
+- Multi-AZ allows you to have an exact copy of your production database in another Availability Zone. AWS Handles the replication for you, so when your production database is written to, this write will automatically be synchronized to the stand-by database
+- In the event of planned database maintenance, DB Instance failure, or an Availability Zone failure, Amazon RDS will automatically failover to the standby so that database operations can resume quickly without administrative intervention.
+
+### What is Multi-AZ RDS?
+- **Multi-AZ is for Disaster Recovery only**
+- It is not primarily used for improving performance. For performance improvement, you need Read Replicas
+
+
+## Read Replica
+TODO
