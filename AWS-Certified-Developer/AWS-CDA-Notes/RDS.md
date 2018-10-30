@@ -134,4 +134,27 @@ To deploy a encrypted copy of snapshot
 
 
 ## Read Replica
-TODO
+Read replicas allow you to have a read-only copy of your production database. This is achieved by using Asynchronous replication from the primary RDS instance to the read replica. You use read replicas primarily for very read-heavy database workloads.
+
+### Read Replica Databases
+- MySQL
+- PostgreSQL
+- MariaDB
+- Auroro
+- NOT AVAILABLE FOR SQL SERVER OR ORACLE
+
+------------
+
+- Used for scaling, **NOT** for DR!
+- Must have automatic backups turned on in order to deploy a read replica
+- You can have up to 5 read replica copies of any database
+- You can have read replicas of read replicas (but watch out for latency)
+- Each read replica will have its own DNS endpoint
+- You **can** have read replicas that have Mutli-AZ
+- Read replicas can be promoted to be their own databases. This breaks the replication.
+- You can have a read replica in another region
+
+## Exam Tips
+- Know the difference between Read Replicas an Multi-AZ
+- Read replicas are for scaling, for performance enhancement
+- Multi-AZ is for disaster recovery
