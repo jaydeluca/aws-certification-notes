@@ -7,11 +7,10 @@
 
 - **Network Load Balancer**
 	- Operates at OSI Layer 4
-	- best suited for load balancing of TCP traffic where  extreme performance is required. Operating at the connection level (Layer 4) Network Load Balancer are capable of handling millions of requests per second, while maintaining ultra-low latencies.
+	- best suited for load balancing of TCP traffic where extreme performance is required. Operating at the connection level (Layer 4) Network Load Balancer are capable of handling millions of requests per second, while maintaining ultra-low latencies.
 	
 - **Classic Load Balance**
-	- are the legacy Elastic Load Balancers. You can balance HTTP/HTTPS applications and use Layer-7-specific features, such as X-Forwarded and sticky sessions. You can also use strict Layer  4 load balancing applications that rely purely on TCP connections.
-
+	- are the legacy Elastic Load Balancers. You can balance HTTP/HTTPS applications and use Layer-7-specific features, such as X-Forwarded and sticky sessions. You can also use strict Layer 4 load balancing applications that rely purely on TCP connections.
 
 ### Tips:
 - 504 error means the gateway has times out. This means that the application not responding within the idle timeout period.
