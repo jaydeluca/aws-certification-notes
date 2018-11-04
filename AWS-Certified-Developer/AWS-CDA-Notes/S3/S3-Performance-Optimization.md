@@ -31,6 +31,12 @@ The guidance is based on the type of workload you are running:
     - Mixed-Workload - Avoid sequential key names for your S3 objects. Instead, add a random prefix like a hex hash to the key name to prevent multiple objects from being store on the same partition
     
 
+## S3 Performance Updates
+- In July 2018, Amazon announced a massive increase in S3 performance
 
+- 2,500 PUT requests per second
+- 5,500 GET requests
 
+- This new increased performance negates the previous guidance to randomize your object key names to achieve faster performance
 
+- This means logical and sequential naming patterns can now be used without any performance implication
