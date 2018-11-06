@@ -28,4 +28,23 @@ X-Ray Supported Languages:
 - [Link to lab](https://us-east-2.console.aws.amazon.com/elasticbeanstalk/home?region=us-east-2#/newApplication?applicationName=scorekeep&solutionStackName=Java)
 
 
-
+# X-Ray Exam Tips
+The X-Ray SDK provides:
+   - Interceptors to add to your code to trace incoming HTTP requests
+   - Client handlers to instrument AWS SDK clients that your application uses to call other AWS Services
+   - An HTTP client used to instrument calls to other internal and external HTTP web services
+   
+The X-Ray Integrates with  the following AWS services:
+- Elastic Load Balancer
+- AWS Lambda
+- Amazon API Gateway
+- Amazon Elastic Compute Cloud
+- AWS Elastic Beanstalk
+   
+X-Ray Supported Languages:
+- Java
+- Go
+- NodeJS
+- Python
+- Ruby
+- .Net
