@@ -38,7 +38,7 @@
 - You do the same calculation. However as this is for Eventually Consistent reads and you get 2 x 4KB per second - or **double** the throughput of Strongly Consistent reads
 
 - Size of each item / 4KB
-    - 3KB/3KB = 0.75 Round-up to the nearest whole number, = 1
+    - 3KB/4KB = 0.75 Round-up to the nearest whole number, = 1
     - Multiply by the number of reads per second = 80
     
 - Divide 80 by 2, so you only need 40 Read Capacity Units for Eventually Consistent reads
