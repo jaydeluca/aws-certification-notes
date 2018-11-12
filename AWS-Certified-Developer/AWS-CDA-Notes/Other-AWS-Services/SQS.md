@@ -46,6 +46,10 @@ The FIFO queue complements the standard queue. The most important features of th
 - While the regular short polling returns immediately (even if the message queue being polled is empty), long polling doesn't return a response until a message arrives in the message queue, or the long poll times out
 - As such, long polling can save you money
 
+## SQS Dead Letter Queue
+A dead letter queue lets you set aside and isolate messages that can't be processed correctly, to determine why their processing didn't succeed
+
+
 ## SQS - Exam Tips
  - SQS is a distributed message queueing system
  - Allows you to decouple the components of an application so that they are independent
@@ -59,7 +63,9 @@ The FIFO queue complements the standard queue. The most important features of th
 - Short Polling - returned immediately even if no messages are in the queue
 - Long Polling - polls the queue periodically and only returns a response when a message is in the queue or the timeout is reached
 
-
+- A dead letter queue lets you set aside and isolate messages that can't be processed correctly, to determine why their processing didn't succeed
+(https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-dead-letter-queues.html
+ )
 
 
 
