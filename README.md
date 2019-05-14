@@ -4,7 +4,7 @@ We can use this repository as a place to hold notes surrounding the aws develope
 
 ## Certifications
 - [AWS Certified Developer - Associate](https://github.com/jaydeluca/aws-certification-notes/tree/master/AWS-Certified-Developer)
-- AWS Certified Solutions Architect - Associate
+- [AWS Certified Solutions Architect - Associate](https://github.com/jaydeluca/aws-certification-notes/tree/master/AWS-Solutions-Architect)
 - AWS Certified DevOps Engineer - Professional
 
 ## Useful Links
